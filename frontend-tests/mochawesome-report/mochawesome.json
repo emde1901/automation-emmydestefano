@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-11-22T01:22:56.616Z",
+    "end": "2020-11-22T01:23:14.098Z",
+    "duration": 17482,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e74377e1-79d3-4a15-9d48-79047626f163",
+      "title": "",
+      "fullFile": "cypress/integration/regression-page-objects.spec.js",
+      "file": "cypress/integration/regression-page-objects.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b8822408-15e0-4bf6-9b1e-e4e7c155c33b",
+          "title": " Test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should create new room",
+              "fullTitle": " Test suite Should create new room",
+              "timedOut": null,
+              "duration": 3487,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashBoardFuncs.navigateToRooms(cy);\ncreateNewRoom.navigateToCreateRoomPage(cy);\nvar newRoom = {\n  roomType: 'twin',\n  roomNumber: '303',\n  floor: '3',\n  price: '2000',\n  features: ['sea_view', 'penthouse']\n};\ncreateNewRoom.fillCreateRoomForm(cy, newRoom);",
+              "err": {},
+              "uuid": "bbc3f52e-5d4d-4162-8fd8-bdb1735109f9",
+              "parentUUID": "b8822408-15e0-4bf6-9b1e-e4e7c155c33b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should create new client",
+              "fullTitle": " Test suite Should create new client",
+              "timedOut": null,
+              "duration": 3564,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashBoardFuncs.navigateToClients(cy);\ncreateNewClient.navigateToCreateClientPage(cy);\nvar newClient = {\n  name: 'Anna Carolina Larsson',\n  email: 'annaclarsson@gmaill.com',\n  telephone: '0723023505'\n};\ncreateNewClient.fillCreateClientForm(cy, newClient);",
+              "err": {},
+              "uuid": "aa502841-bdff-42a4-a8ee-879655f26b71",
+              "parentUUID": "b8822408-15e0-4bf6-9b1e-e4e7c155c33b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should delete new client",
+              "fullTitle": " Test suite Should delete new client",
+              "timedOut": null,
+              "duration": 2009,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashBoardFuncs.navigateToClients(cy);\ndeleteClient.deleteNewClient(cy);",
+              "err": {},
+              "uuid": "76f49efb-07e0-40fc-9edd-23a5815a10ec",
+              "parentUUID": "b8822408-15e0-4bf6-9b1e-e4e7c155c33b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should create new bill",
+              "fullTitle": " Test suite Should create new bill",
+              "timedOut": null,
+              "duration": 2572,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashBoardFuncs.navigateToBills(cy);\ncreateNewBill.navigateToCreateBillPage(cy);\nvar newBill = {\n  price: '2399'\n};\ncreateNewBill.fillCreateBillForm(cy, newBill);",
+              "err": {},
+              "uuid": "83f8678b-aa18-43df-b199-d8aea1551cf1",
+              "parentUUID": "b8822408-15e0-4bf6-9b1e-e4e7c155c33b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should create new reservation",
+              "fullTitle": " Test suite Should create new reservation",
+              "timedOut": null,
+              "duration": 3473,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashBoardFuncs.navigateToReservations(cy);\ncreateNewReservation.navigateToCreateReservationPage(cy);\nvar newReservation = {\n  startDate: '2020-12-05',\n  endDate: '2020-12-09',\n  client: '2',\n  room: '3',\n  bill: ''\n};\ncreateNewReservation.fillCreateNewReservationForm(cy, newReservation);",
+              "err": {},
+              "uuid": "ebf75334-f8e0-4f15-bfb1-23ed91a92287",
+              "parentUUID": "b8822408-15e0-4bf6-9b1e-e4e7c155c33b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bbc3f52e-5d4d-4162-8fd8-bdb1735109f9",
+            "aa502841-bdff-42a4-a8ee-879655f26b71",
+            "76f49efb-07e0-40fc-9edd-23a5815a10ec",
+            "83f8678b-aa18-43df-b199-d8aea1551cf1",
+            "ebf75334-f8e0-4f15-bfb1-23ed91a92287"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15105,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {},
+      "version": "5.1.0"
+    }
+  }
+}
